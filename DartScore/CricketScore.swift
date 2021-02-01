@@ -46,7 +46,8 @@ class CricketScores {
       countedShouts[.playerTwo] = [CricketNumber:Int]()
    }
 
-   func calcScore() {
+   func calcScore() -> [Player: Int] {
+      var score = [Player: Int]()
       score[.playerOne] = 0
       score[.playerTwo] = 0
 
@@ -59,6 +60,7 @@ class CricketScores {
             }
          }
       }
+      return score
    }
 
    func addThrow(_ dartThrow:DartThrow) {
@@ -73,7 +75,7 @@ class CricketScores {
       throwList.append(dartThrow)
       countedShouts[dartThrow.player]![dartThrow.number, default: 0] += dartThrow.multipler.rawValue
 
-      calcScore()
+      self.score = calcScore()
    }
 
    func scoreFor(_ player: Player) -> Int {
