@@ -60,7 +60,7 @@ class CricketScoreTests: XCTestCase {
       cricket.addThrow(DartThrow(player:.playerOne, number:.fifteen, multipler: .single))
 
       cricket.addThrow(DartThrow(player:.playerTwo, number:.fifteen, multipler: .triple))
-      
+
       cricket.addThrow(DartThrow(player:.playerOne, number:.fifteen, multipler: .single))
 
       XCTAssertEqual(cricket.scoreFor(.playerOne), 15)

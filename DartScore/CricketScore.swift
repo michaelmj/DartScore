@@ -64,16 +64,19 @@ class CricketScores {
    }
 
    func addThrow(_ dartThrow:DartThrow) {
-      let otherPlayers = Player.allCases.filter { $0 != dartThrow.player }
+      throwList.append(dartThrow)
 
-      for otherPlayer in otherPlayers {
-         if ( countedShouts[otherPlayer]![dartThrow.number, default: 0] >= 3 ) {
-            return
-         }
+      let otherPlayer = Player.allCases.filter { $0 != dartThrow.player }.first!
+
+      var thisShotValue = dartThrow.multipler.rawValue
+
+      if ( countedShouts[otherPlayer]![dartThrow.number, default: 0] >= 3 ) {
+         let toClose = 3 - countedShouts[dartThrow.player]![dartThrow.number, default: 0]
+         thisShotValue = max(min(thisShotValue, toClose), 0)
       }
 
-      throwList.append(dartThrow)
-      countedShouts[dartThrow.player]![dartThrow.number, default: 0] += dartThrow.multipler.rawValue
+      countedShouts[dartThrow.player]![dartThrow.number, default: 0] += thisShotValue
+
 
       self.score = calcScore()
    }
