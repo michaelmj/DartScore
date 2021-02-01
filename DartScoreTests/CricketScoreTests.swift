@@ -44,6 +44,17 @@ class CricketScoreTests: XCTestCase {
    func testOtherPlayerCantScoreOnClosed() throws {
       let cricket = CricketScores()
       cricket.addThrow(DartThrow(player:.playerOne, number:.fifteen, multipler: .triple))
+
+      cricket.addThrow(DartThrow(player:.playerTwo, number:.fifteen, multipler: .triple))
+      cricket.addThrow(DartThrow(player:.playerTwo, number:.fifteen, multipler: .single))
+
+      XCTAssertEqual(cricket.scoreFor(.playerOne), 0)
+      XCTAssertEqual(cricket.scoreFor(.playerTwo), 0)
+   }
+
+   func testOtherPlayerCantScoreWhenHavingPoints() throws {
+      let cricket = CricketScores()
+      cricket.addThrow(DartThrow(player:.playerOne, number:.fifteen, multipler: .triple))
       cricket.addThrow(DartThrow(player:.playerOne, number:.fifteen, multipler: .single))
       cricket.addThrow(DartThrow(player:.playerOne, number:.fifteen, multipler: .single))
 

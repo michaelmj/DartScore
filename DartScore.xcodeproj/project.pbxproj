@@ -15,8 +15,6 @@
 		4CC44B6825C5D806003D7449 /* DartScoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC44B6725C5D806003D7449 /* DartScoreUITests.swift */; };
 		4CC44B8225C6044D003D7449 /* CricketScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC44B8125C6044D003D7449 /* CricketScore.swift */; };
 		4CC44B8325C6044D003D7449 /* CricketScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC44B8125C6044D003D7449 /* CricketScore.swift */; };
-		4CC44B8825C60741003D7449 /* Turn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC44B8725C60741003D7449 /* Turn.swift */; };
-		4CC44B8925C60741003D7449 /* Turn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC44B8725C60741003D7449 /* Turn.swift */; };
 		4CC44B8E25C607CD003D7449 /* CricketScoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC44B8D25C607CD003D7449 /* CricketScoreTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -51,7 +49,6 @@
 		4CC44B6725C5D806003D7449 /* DartScoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DartScoreUITests.swift; sourceTree = "<group>"; };
 		4CC44B6925C5D806003D7449 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CC44B8125C6044D003D7449 /* CricketScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CricketScore.swift; sourceTree = "<group>"; };
-		4CC44B8725C60741003D7449 /* Turn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Turn.swift; sourceTree = "<group>"; };
 		4CC44B8D25C607CD003D7449 /* CricketScoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CricketScoreTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,7 +106,6 @@
 				4CC44B5325C5D805003D7449 /* Info.plist */,
 				4CC44B5025C5D805003D7449 /* Preview Content */,
 				4CC44B8125C6044D003D7449 /* CricketScore.swift */,
-				4CC44B8725C60741003D7449 /* Turn.swift */,
 			);
 			path = DartScore;
 			sourceTree = "<group>";
@@ -272,7 +268,6 @@
 			files = (
 				4CC44B4D25C5D7F6003D7449 /* ContentView.swift in Sources */,
 				4CC44B8225C6044D003D7449 /* CricketScore.swift in Sources */,
-				4CC44B8825C60741003D7449 /* Turn.swift in Sources */,
 				4CC44B4B25C5D7F6003D7449 /* DartScoreApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,7 +277,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CC44B8325C6044D003D7449 /* CricketScore.swift in Sources */,
-				4CC44B8925C60741003D7449 /* Turn.swift in Sources */,
 				4CC44B8E25C607CD003D7449 /* CricketScoreTests.swift in Sources */,
 				4CC44B5D25C5D805003D7449 /* DartScoreTests.swift in Sources */,
 			);
